@@ -1,0 +1,479 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#f4f1ef;
+  color:#2e2e2e;
+  overflow-x:hidden;
+}
+
+h1,h2,h3,h4{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:400;
+}
+
+section{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s ease;
+}
+
+section.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  background:url('GENTLESTEMATAS.jpg') center/cover no-repeat;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  opacity:1;
+  transform:none;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(255,255,255,0.35);
+}
+
+.hero-content{
+  position:relative;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:120px;
+  line-height:0.9;
+  color:#c90d52;
+}
+
+button{
+  margin-top:40px;
+  padding:15px 35px;
+  border:none;
+  border-radius:40px;
+  background:#1d2227;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+/* FEATURES */
+
+.features{
+  padding:100px 12%;
+  text-align:center;
+  background:#fff;
+}
+
+.features h2{
+  font-size:52px;
+  margin-bottom:70px;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:50px;
+}
+
+.feature-card img{
+  width:120px;
+  margin-bottom:20px;
+}
+
+.feature-card h3{
+  margin-bottom:15px;
+  font-size:28px;
+}
+
+.feature-card p{
+  line-height:1.8;
+  font-size:15px;
+}
+
+/* ABOUT */
+
+.about{
+  padding:100px 12%;
+  background:#f7eceb;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.title h2{
+  font-size:58px;
+  margin-bottom:25px;
+}
+
+.title p{
+  width:70%;
+  margin:auto;
+  line-height:1.8;
+}
+
+.about-content{
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
+
+.about-img{
+  width:60%;
+}
+
+.about-box{
+  background:#fff;
+  padding:40px;
+  width:40%;
+}
+
+.about-box h3{
+  font-size:38px;
+  margin-bottom:20px;
+}
+
+.about-box ul{
+  margin-top:20px;
+  padding-left:20px;
+  line-height:2;
+}
+
+/* CATALOG */
+
+.catalog{
+  padding:100px 12%;
+  background:#fff;
+}
+
+.catalog h2{
+  text-align:center;
+  font-size:58px;
+  margin-bottom:50px;
+}
+
+.catalog-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.product img{
+  width:100%;
+}
+
+.product h4{
+  margin-top:15px;
+  font-size:24px;
+}
+
+.product span{
+  font-size:14px;
+}
+
+/* PROMO */
+
+.promo{
+  height:500px;
+  background:url('BG2.jpg') center/cover no-repeat;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.promo-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(255,255,255,0.2);
+}
+
+.promo-content{
+  position:relative;
+  text-align:center;
+}
+
+.promo h2{
+  font-size:60px;
+}
+
+/* CREATION */
+
+.creation{
+  padding:100px 12%;
+  background:#fff;
+}
+
+.creation h2{
+  text-align:center;
+  font-size:52px;
+  margin-bottom:60px;
+}
+
+.creation-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.creation-card img{
+  width:100%;
+}
+
+.creation-card h4{
+  margin-top:20px;
+  font-size:26px;
+}
+
+.creation-card p{
+  margin-top:10px;
+  line-height:1.7;
+}
+
+/* ART */
+
+.art{
+  padding:100px 12%;
+  background:#f8f1ef;
+}
+
+.art-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.art-wrapper img{
+  width:700px;
+  display:block;
+}
+
+.art-box{
+  width:420px;
+  background:#fff;
+  padding:55px;
+  position:relative;
+  z-index:2;
+  margin-left:-80px;
+}
+
+.art-box h2{
+  font-size:58px;
+  line-height:1.1;
+  margin-bottom:25px;
+  color:#2e2e2e;
+}
+
+.art-box p{
+  line-height:1.9;
+  margin-bottom:30px;
+  color:#555;
+  font-size:15px;
+}
+
+.art-box a{
+  text-decoration:none;
+  color:#111;
+  font-size:14px;
+}
+
+/* BOTANICAL */
+
+.botanical{
+  padding:120px 12%;
+  background:#f6f0ed;
+}
+
+.botanical-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.botanical-text{
+  width:420px;
+  background:#ffffff;
+  padding:55px;
+  position:relative;
+  z-index:2;
+  margin-right:-80px;
+}
+
+.botanical-text h2{
+  font-size:52px;
+  line-height:1.1;
+  margin-bottom:25px;
+  color:#2e2e2e;
+}
+
+.botanical-text p{
+  font-size:15px;
+  line-height:1.9;
+  color:#555;
+  margin-bottom:35px;
+}
+
+.botanical-text a{
+  text-decoration:none;
+  color:#111;
+  font-size:14px;
+}
+
+.botanical-image{
+  width:700px;
+}
+
+.botanical-image img{
+  width:100%;
+  display:block;
+}
+
+/* CONTACT */
+
+.contact{
+  padding:100px 12%;
+  text-align:center;
+  background:#fff;
+}
+
+.contact h2{
+  font-size:52px;
+}
+
+/* INSTAGRAM */
+
+.instagram{
+  padding:100px 12%;
+  background:#fff;
+}
+
+.instagram h2{
+  text-align:center;
+  margin-bottom:50px;
+  font-size:48px;
+}
+
+.insta-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:20px;
+}
+
+.insta-grid img{
+  width:100%;
+}
+
+/* FOOTER */
+
+footer{
+  background:#1d2227;
+  color:white;
+  padding:40px;
+  text-align:center;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+  .hero h1{
+    font-size:70px;
+  }
+
+  .feature-grid,
+  .catalog-grid,
+  .creation-grid,
+  .insta-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-content,
+  .art-wrapper,
+  .botanical-wrapper{
+    flex-direction:column;
+  }
+
+  .about-img,
+  .about-box,
+  .art-wrapper img,
+  .botanical-image{
+    width:100%;
+  }
+
+  .art-box,
+  .botanical-text{
+    width:100%;
+    margin:0 0 30px 0;
+  }
+
+  .features h2,
+  .title h2,
+  .catalog h2,
+  .promo h2,
+  .creation h2,
+  .contact h2,
+  .art-box h2,
+  .botanical-text h2{
+    font-size:38px;
+  }
+
+}
+@media(max-width:992px){
+
+  .hero h1{
+    font-size:70px;
+  }
+
+  .feature-grid,
+  .catalog-grid,
+  .creation-grid,
+  .insta-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-content,
+  .art-wrapper,
+  .botanical-wrapper{
+    flex-direction:column;
+  }
+
+  .about-img,
+  .about-box,
+  .art-wrapper img,
+  .botanical-image{
+    width:100%;
+  }
+
+  .art-box,
+  .botanical-text{
+    width:100%;
+    margin:0 0 30px 0;
+  }
+
+  .features h2,
+  .title h2,
+  .catalog h2,
+  .promo h2,
+  .creation h2,
+  .contact h2,
+  .art-box h2,
+  .botanical-text h2{
+    font-size:38px;
+  }
+
+}
